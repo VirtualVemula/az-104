@@ -3,7 +3,7 @@
 Install-Module -Name AzureAD
 #Connect to Azure AD
 $AzureADCred = Get-Credential
-Connect-Azuread -Credential $AzureADCredconn
+Connect-Azuread -Credential $AzureADCred
 #Create user vuser4 using Powershell, replace -UserPrinicipalName your default domain name.
 $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 $PasswordProfile.Password = "Test@123"
